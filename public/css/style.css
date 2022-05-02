@@ -1,0 +1,59 @@
+.container-disciplina{
+    background-color: gainsboro;
+}
+.navbar{
+    background-color: #1597E5;
+}
+.info{
+    text-align: center;
+    color:black;
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 3%;
+}
+#button-proximo{
+    position: absolute;
+    bottom: 15%;
+    right: 3%;
+}
+#button-anterior{
+    position:absolute;
+    bottom: 15%;
+    left: 3%;
+}
+.container-fluid{
+    margin-top: 12%;
+}
+h2{
+    text-align: center;
+}
+.status{
+    padding: 3% 10%;
+}
+.row{
+    background-color: #1597E5;
+    color: #E6E6E6;
+}
+
+/* aluno */
+
+.info-lab{
+    background-color: gainsboro;
+    padding: 1% 5%;
+}
+/* parte do aluno */
+
+.btn-link{
+    color: #E6E6E6;
+    text-decoration: none;
+}

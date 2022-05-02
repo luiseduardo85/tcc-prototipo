@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Area Professor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../public/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+
+      <div class="container-disciplina">
+          <p class="info">Informações da disciplina ou laboratorio</p>
+
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">Area do Professor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+
+              <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                  Gerar convite
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Inserir atividade
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-link">Iniciar</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-link">Encerrar</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Enviar convite</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                
+                  <div class="input-group mb-3">
+                    <form action="/" method="post">
+                      <label for="basic-url" class="form-label">Link da plataforma</label>
+                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="link">
+                      <br>
+                      <button type="submit" class="btn btn-primary upl-btn mb-6">
+                        <a href="mailto:">Confirmar</a></button>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Inserir atividade</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                <form action="/fileup/save" method="POST">
+                  <input type="file" name="file" class="form-control add-file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                  <br>
+                  <input type="submit" class="btn btn-primary upl-btn" id="inputGroupFileAddon04"></input>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Title -->
+    <!-- carousel de atividade -->
+    <div>
+      <h1>Atividade</h1>
+      <center><img src="../public/imagens/atividade.png" alt=""> </center>
+    </div>
+    <div>
+      <button id="button-proximo">Proximo</button>
+      <button id="button-anterior">Anterior</button>
+    </div>
+
+  </section>
+
+  <!-- Features -->
+
+  <section id="features">
+
+      <div class="container-fluid">
+        <div class="row feature-box ">
+          <h2>Alunos</h2>
+          <div class="status">
+            <ul class="list-group list-group-horizontal mb-3">
+              <li class="list-group-item">
+                <span>Aluno 1</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 2</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 3</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 4</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 5</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 6</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 7</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 8</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 9</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 10</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 11</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 12</span>
+              </li>
+            </ul>
+            <ul class="list-group list-group-horizontal mb-3">
+              <li class="list-group-item">
+                <span>Aluno 1</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 2</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 3</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 4</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 5</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 6</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 7</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 8</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 9</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 10</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 11</span>
+              </li>
+              <li class="list-group-item">
+                <span>Aluno 12</span>
+              </li>
+
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <!-- Footer -->
+
+  <footer id="footer">
+
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../index.js" charset="UTF-8"></script>
+</body>
+
+</html>
